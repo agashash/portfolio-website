@@ -1,51 +1,112 @@
 
+*{
+  padding: 0px;
+  margin: 0px;
+}
 
+.navbar-brand ,.display-6{
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
 
+ 
+.offcanvas-title  h5{
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+.education
+        {
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+ .education img {
+            max-width :75%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .education p{
+          color:white;
+      }
+      .education h3{
+          color: #661496;
+      }
 
-.offcanvas-body {
-    display: inline;
-    flex-direction: column;
-    justify-content:center;
+      .education section{
+          height: 25px;
+          width: 25px;
+
+      }
+      .slideshow-container {
+        position: relative;
+        max-width: 60%;
+        margin: auto;
+        overflow: hidden;
+    }
     
-}
+    .slides {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+    
+    .slide {
+        min-width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .slide img {
+        width: 100;
+        vertical-align: middle;
+    }
+    
+    button {
+        position:static;
+        top: 100%;
+        background-color: rgba(105, 93, 105, 0.5);
+        color: rgb(218, 229, 166);
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+        font: size 50px;;
+        z-index: 100;
+        transform: translateY(0%);
+    }
+    
+    .prev {
+        left: 10px;
+    }
+    
+    .next {
+        right: 10px;
+    }
+    .container p{
+        font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+    }
 
-.navbar-nav {
-    flex-direction: column;
+    .skills.container{
+        margin-bottom: 100px;
+    }
 
-}
+    .skill-item{
+        background-color:rgba(0, 0, 0, 0.5);
+      
+    }
+    .skills-list p{
+        background-color: #ebe7d3;
+        color: rgb(180, 32, 32);
+    }
+    .div1{
+        margin-bottom: 120px;
+    }
 
+    /* Social Icons Styles */
 
-html,
-body {
-  scroll-behavior: smooth;
-  
-}
-
-.navbar-brand{
-    text-align:center;
-}
-
-.navbar-brand {
-   
-    font-size: 1.75rem;
-   
-    top: 50px;
-    right: 50px;
-    border: 50px;
-    margin: 10px;
-}
-
-.nav-link {
-    transition: color 0.3s ease;
-}
-
-.nav-link:hover {
-    color: #f0f0f0; /* Lighten color on hover */
-}
-
-.offcanvas-body {
-    padding: 1rem;
-}
 /* Footer Styles */
 .footer {
     background-color: #0f0f0f;

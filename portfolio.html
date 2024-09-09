@@ -1,475 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head >
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="logo.css">
-    https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css
-    <title>Portfolio Website</title>
-   
-    <style>
-         .body {
-            font-family: Arial, sans-serif;
-            margin: 24px;
-            padding: 0;
-            line-height: 1.6;
-            color: #220000;
-            background-color:white;
-        }
-
-
-     
-        .container {
-            width: 80%;
-            margin: auto;
-            padding: 20px 0;
-        }
-        .section {
-            padding: 60px 0;
-            margin: 5%;
-            background-size: cover;
-            background-position: center;
-            color: #0f0e0e;
-            text-align: center;
-        }
-        .section h2 {
-            margin-top: 0;
-        }
-        .section p {
-            margin: 0;
-        }
-        .project,.education, .Result 
-        {
-            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-            border-radius: 10px;
-            padding: 20px;
-            margin-bottom: 20px;
-        }
-        .project img,.Result, .education img {
-            max-width :75%;
-            height: auto;
-            border-radius: 10px;
-        }
-
-
-
-
-        
-        .footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-        .skills-list{
-            color:rgba(0, 0, 0, 0.5);
-            color: #f4f4f4;
-        }
-        .skills-list p {
-            border-left-style:solid;
-        }
-        
-        .about div{
-           
-           border: 100px;
-           padding: 100px;
-            
-        }
-        .education p{
-            color:white;
-        }
-        .education h3{
-            color: #661496;
-        }
-
-        .education section{
-            height: 25px;
-            width: 25px;
-
-        }
-
-        
-        
-    </style>
+    <title>My portfolio</title>
 </head>
-<body>
-    <header>
-        <nav class="navbar navbar-dark bg-dark fixed-top">
+<body class="bg-secondary">
+
+    <header >
+    <section id="#home">
+        <nav class="navbar bg-primary fixed-top py-3">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#home">My Portfolio Website</a>
-    
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-    
-                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Portfolio</h5>
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav mx-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="#home">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#About">About Me</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#projects">Projects</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#resume">Resume</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#education">Education</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#skills">Skills</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#contact">Contact</a>
-                            </li>
-                        </ul>
-                        <form class="d-flex mt-3" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-success" type="submit">Search</button>
-                        </form>
-                    </div>
+              <a class="navbar-brand nav-item ps-5 " href="#">WELCOME TO MY PORTFOLIO WEBSITE</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title text-secondary" id="offcanvasNavbarLabel">My portfolio</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav mx-auto">
+                      <li class="nav-item">
+                          <a class="nav-link" aria-current="page" href="#home">Home</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#About">About Me</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#projects">Projects</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#resume">Resume</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#education">Education</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#skills">Skills</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#contact">Contact</a>
+                      </li>
+                  </ul>
+              </div>
             </div>
-        </nav>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    </header>
-    
-    
-
-    
-
-    <section id="home" class="section" style="background-image: url('');">
-        <div class="container">
-            <h2 style="margin: 20px; color: rgba(99, 41, 175, 0.5); text-align:center;">Welcome to My Portfolio</h2>
-            <p style="color: #333;">
-                <ul style="display: inline-block;background-color:rgba(145, 132, 132, 0.5)">
-                “Hello and thank you for visiting my site!
-                Welcome to my portfolio! I'm thrilled to share my creative journey with you, showcasing About My Self,  My skills, and Projects. 
-            </ul>
-            </p>
-        </div>
-    </section>
-
-<center>
-    <section id="About" class="section" style="background-image: url('images/IMG_20240623_213502_517.webp'); max-width: 75%; ;" >
-       
-        <div class="container" ;>
-            <h2 style="margin: 300px;" ></h2>
-            <h3 style="color: blue; ">Some Thing Inteasting  About My Self:</h3>
-            <p style="color: #333;background-color: #0f0e0e ;color: aliceblue;" > I’m AgashT. I recently completed my undergraduate studies at Stella Mary’s College of Engineering, where I focused on Electronics and Communication Engineering.I done my schooling in  Mother Thresa Matric Hr Sec School. which provided me with a solid foundation in communication and lot of skills. I’m passionate about pursuing a career in the IT company. My passion is to travel around the world.That all a simple introduction about me ❤️
-
-            </p>
-
-
-        </div>
-
-    </section>
-</center>
-
-
-    <section id="projects" class="section" style="background-image: url('background-projects.jpg');">
-        
-            <h2 style="margin: 20px; color: #29a6cc;">Projects💻</h2>
-           
-            <p>
-                <ul style="background-color: rgba(0, 0, 0, 0.5); display: inline-block;">
-
-                    This project  proposes an AI-based application that uses machine learning algorithms to predict job eligibility based on students' education qualifications and skill sets. 
-                    
-
-                    The application collects relevant data from students, preprocesses it, and uses advanced machine learning techniques to train a predictive model.
-                    
-                </ul>
-            </p>
-
-            <div class="slideshow-container">
-                <div class="slides">
-                    <div class="slide"><img src="images/project img 1_files.jfif" alt="Image 1"></div>
-                    <div class="slide"><img src="images/project img 2.html" alt="Image 2"></div>
-                    <div class="slide"><img src="images/project img 3.html" alt="Image 3"></div>
-                </div>
-                <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
-                <button class="next" onclick="changeSlide(1)">&#10095;</button>
-            
-        
-            <style>
-           
-            
-            .slideshow-container {
-                position: relative;
-                max-width: 60%;
-                margin: auto;
-                overflow: hidden;
-            }
-            
-            .slides {
-                display: flex;
-                transition: transform 0.5s ease-in-out;
-            }
-            
-            .slide {
-                min-width: 100%;
-                box-sizing: border-box;
-            }
-            
-            .slide img {
-                width: 100;
-                vertical-align: middle;
-            }
-            
-            button {
-                position:static;
-                top: 100%;
-                background-color: rgba(105, 93, 105, 0.5);
-                color: rgb(218, 229, 166);
-                border: none;
-                cursor: pointer;
-                padding: 10px;
-                font: size 50px;;
-                z-index: 100;
-                transform: translateY(0%);
-            }
-            
-            .prev {
-                left: 10px;
-            }
-            
-            .next {
-                right: 10px;
-            }
-            </style>
-        
-            <script>let currentSlideIndex = 0;
-                const slideInterval = 3000; // 3 seconds
-                const slides = document.querySelectorAll('.slide');
-                const totalSlides = slides.length;
-                
-                function showSlide(index) {
-                    if (index >= totalSlides) {
-                        currentSlideIndex = 0;
-                    } else if (index < 0) {
-                        currentSlideIndex = totalSlides - 1;
-                    } else {
-                        currentSlideIndex = index;
-                    }
-                
-                    const offset = -currentSlideIndex * 100;
-                    document.querySelector('.slides').style.transform = `translateX(${offset}%)`;
-                }
-                
-                function changeSlide(direction) {
-                    showSlide(currentSlideIndex + direction);
-                }
-                
-                function autoSlide() {
-                    showSlide(currentSlideIndex + 1);
-                }
-                
-                // Initialize slideshow
-                showSlide(currentSlideIndex);
-                setInterval(autoSlide, slideInterval);
-                
-                </script>
-                
-            </div>
-
-    </section>
-
-   
-   
-<center>
-
-    <section id="resume" >
-        
-        <div class="container" style=" padding: 100px 200px;">
-            <button id="openPdfButton" class="resume-button">Resume</button>
-            
-
-
-            
-            <style>
-                .resume-button {
-            background-color: #0d09e7;
-            color: #f6f5f8;
-            border: none;
-            border-radius: 5px;
-            padding: 20px 40px;
-            margin: 15px;
-            font-size: 24px;
-            cursor: pointer;
-            position: relative;
-            overflow: hidden;
-            transition: background-color 0.3s, transform 0.3s;
-        }
-
-        .resume-button:hover {
-            background-color: #c54e17;
-            color: #b99f9f;
-            transform: scale(1.05);
-        }
-
-        .resume-button:focus {
-            outline:invert;
-        }
-
-        .resume-button::after {
-            content: "";
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 300%;
-            height: 300%;
-            background: rgba(255, 255, 255, 0.4);
-            transition: width 0.6s, height 0.6s, top 0.6s, left 0.6s;
-            border-radius: 50%;
-            transform: translate(-50%, -50%);
-            pointer-events: none;
-        }
-
-        .resume-button:active::after {
-            width: 0;
-            height: 0;
-            top: 50%;
-            left: 50%;
-        }
-
-                   
-                
-
-            </style>
-            <script>
-        
-                document.getElementById('openPdfButton').addEventListener('click', function() {
-                  // Path to the PDF file
-                 const pdfUrl = 'images/Agash.Cv.pdf';
-         
-                  // Open PDF in a new window/tab
-                   window.open(pdfUrl, '_blank');});
-         </script>
-        </div>   
-    </section>
-</center>
-
-
-
-
-   <center>
-    <section id="education" class="section" style="background-image: url('images/education1.jfif'); max-width: 75%;">
-        <div class="container">
-        <h1 style="color: #0c0505;">Education</h1>
-            <div class="education">
-                <h3>Degree</h3>
-                <p>Stella Marys college Of Engineering</p>
-                <p>Electronics and Communication Engineering</p>
-                <p>2020-2024</p>
-
-                <h3>HSLC</h3>
-                <p>Mother Theresa Matric Hr Sec School</p>
-                <p>2019-2020</p>
-                
-                
-                
-                <h3>SSLC</h3>
-                <p>Mother Theresa Matric Hr Sec School</p>
-                <p>2017-2018</p>
-                
-
-
-
-
-
-
-                
-                
-                
-                
-                
-            </div>
-            <!-- Add more education items here -->
-        </div> 
-    </section>
-</center>
-    
-
-
-<center>
-
-    <section id="skills" class="section" style="background-image: url('images/new image3.jpg'); max-width: 75%;">
-       
-            <div class="container">
-                <h2 style="color: rgba(0, 0, 0, 0.5);color: white; display: inline;">Skills</h2>
-                <div class="skills-list">
-                    <div class="skill-item">
-                        <p style="font-size: large; color: rgba(241, 217, 217, 0.5);">SOFTWARE KNOWLEDGE.</p>
-                       
-                        
-                   
-                    <div class="skill-item" >
-                        
-                        <ol style="display: inline-block;">
-                            <li><span><i class="fa-brands fa-python"></i></span> Python</li>
-                            <li><span><i class="fa-brands fa-html5"></i></span>HTML</li>
-                            <li><span><i class="fa-brands fa-css3-alt"></i></span>CSS</li>
-                            <li><span><i class="fa-brands fa-js"></i></span>JavaScript</li>
-                            <li><span><i class="fa-solid fa-file-excel"></i></span>Excel</li>
-                            <li><span><i class="fa-solid fa-file-ppt"></i></i></span>PowerPoint</li>
-                            <li><span><i class="fa-regular fa-file-word"></i></span>Word</li>
-                        </ol>
-                    </div>
-                </div>
-            </div>
+          </nav>
         </section>
-    </center>
-    
-    
+    </header>
 
-   <center> 
-    <section id="contact" class="section" style="background-image: url('images/new  image 2.jpg'); max-width: 75%;">
-        <dir>
-        <div class="container">
-            <h2 style="font-size:xx-large; color: rgba(0, 0, 0, 0.5); font: bold;">Contact Me</h2>
-            <p style="color:rgba(0, 0, 0, 0.5); display: inline; font-weight: 5oo; padding: 100px;">You can always contact me whenever you need:</p>
-            <div>
-                <h5 style="color: rgba(0, 0, 0, 0.5); display: inline-block;"> Email: <a href=mailto:your.email@example.com>agashraj17@gmail.com</a></h5>
+    <main>
+<center>
+    <section id="about" class="container pt-5 pb-3 py-3 px-5 m-5 mx-5">
+      <div  >
+        <div class="card align-items-center bg-dark text-white">
+            <div class="card-body ">
+                <p class="card-title display-6 text-center">About My Self</p>
+                
             </div>
-            <p style="color: #101fee;">kanayakumari, Tamilnadu,629802</p>
-
-        
         </div>
-    </dir>
-    </section>
+        </section>
+        
 </center>
 
-    <footer>
-        <footer class="footer">
-            <div class="footer-content">
-                <p>&copy; 2024 AGASH. All rights reserved.</p>
-                <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/Agash T" target="_blank" class="social-icon linkedin"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="mailto:agashraj17@gmail.com" target="_blank" class="social-icon gmail"><i class="fa-solid fa-square-envelope"></i></i></a>
-                    <a href="https://github.com/" target="_blank" class="social-icon github"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.instagram.com/ahh___ashh" target="_blank" class="social-icon instagram"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://wa.me/8610712401" target="_blank" class="social-icon whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
-                </div>
+
+<center>
+<div class="container h-0 w-50 mt-4 ">
+  <div class="row d-flex justify-content-center px-0 py-0 pt-3 bg-success text-white">
+    <div class="col h-50 col-lg-1"></div>
+  <img class=" image-fluid-round" src="images/agash.jpg" alt="">
+  <p class=" col align-items-center px-3 py-3 bg-dark">I’m AgashT. I recently completed my undergraduate studies at Stella Mary’s College of Engineering, where I focused on Electronics and Communication Engineering.I done my schooling in  Mother Thresa Matric Hr Sec School. which provided me with a solid foundation in communication and lot of skills. I’m passionate about pursuing a career in the IT company. My passion is to travel around the world.That all a simple introduction about me ❤️</p>
+</div>
+
+</div>
+
+</center>
+
+
+
+<div class="display-6 text-center pt-5 pb-0">EDUCATION</div>
+
+<center>
+  <section id="education" class="section" style="background-image: url(''); max-width: 75%;">
+      <div class="container">
+     
+          <div class="education">
+              <h3>Degree</h3>
+              <p>Stella Marys college Of Engineering</p>
+              <p>Electronics and Communication Engineering</p>
+              <p>2020-2024</p>
+
+              <h3>HSLC</h3>
+              <p>Mother Theresa Matric Hr Sec School</p>
+              <p>2019-2020</p>
+              
+              
+              
+              <h3>SSLC</h3>
+              <p>Mother Theresa Matric Hr Sec School</p>
+              <p>2017-2018</p>
+  </div>
+          <!-- Add more education items here -->
+      </div> 
+  </section>
+</center>
+  
+
+
+</div>
+
+
+<div class="display-6 text-center pt-5 pb-0">PROJECT</div>
+   
+<center>
+<section id="projects" class="section" style="background-image: url('background-projects.jpg');">
+        
+ 
+ 
+  <p>
+      <ul class="background-image bg-dark text-white py-3 mx-5 ">
+
+          This project  proposes an AI-based application that uses machine learning algorithms to predict job eligibility based on students' education qualifications and skill sets. 
+          
+
+          The application collects relevant data from students, preprocesses it, and uses advanced machine learning techniques to train a predictive model.
+          
+      </ul>
+  </p>
+
+  <div class="slideshow-container">
+      <div class="slides">
+          <div class="slide"><img src="images/project img 1_files.jfif" alt="Image 1"></div>
+          <div class="slide"><img src="images/project img 2.html" alt="Image 2"></div>
+          <div class="slide"><img src="images/project img 3.html" alt="Image 3"></div>
+      </div>
+      <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+      <button class="next" onclick="changeSlide(1)">&#10095;</button>
+  
+
+ 
+      
+  </div>
+
+</section>
+</center>
+
+
+<div class="display-6 text-center pt-5 pb-0">SKILL</div>
+
+
+<center class="div1 ">
+
+  <section id="skills" class="section" style="background-image: url(''); max-width: 75%;">
+     
+          <div class="container  text-white " >
+             
+              <div class="skills-list ">
+                  <div class="skill-item">
+                      <p class="h4 pt-3 mt-2 bg-info ">SOFTWARE KNOWLEDGE.</p>
+                     
+                      
+                 
+                  <div class="skill-item" >
+                      
+                      <ol style="display: inline-block;">
+                          <li><span><i class="fa-brands fa-python"></i></span> Python</li>
+                          <li><span><i class="fa-brands fa-html5"></i></span>HTML</li>
+                          <li><span><i class="fa-brands fa-css3-alt"></i></span>CSS</li>
+                          <li><span><i class="fa-brands fa-js"></i></span>JavaScript</li>
+                          <li><span><i class="fa-solid fa-file-excel"></i></span>Excel</li>
+                          <li><span><i class="fa-solid fa-file-ppt"></i></i></span>PowerPoint</li>
+                          <li><span><i class="fa-regular fa-file-word"></i></span>Word</li>
+                      </ol>
+                  </div>
+              </div>
+          </div>
+      </section>
+  </center>
+</main>
+
+<footer>
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 AGASH. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/Agash T" target="_blank" class="social-icon linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:agashraj17@gmail.com" target="_blank" class="social-icon gmail"><i class="fa-solid fa-square-envelope"></i></i></a>
+                <a href="https://github.com/" target="_blank" class="social-icon github"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/ahh___ashh" target="_blank" class="social-icon instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://wa.me/8610712401" target="_blank" class="social-icon whatsapp"><i class="fa-brands fa-whatsapp"></i></i></a>
             </div>
-        </footer>
-    
+        </div>
     </footer>
-    
+
+</footer>
+
+
+
+
+    <link rel="stylesheet" href="script.js">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>    
 </body>
 </html>
 
