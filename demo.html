@@ -16,7 +16,7 @@
   padding: 0;
   box-sizing: border-box;
   background: var(--bg);
-  display: ;
+  
 }
 
 :root {
@@ -28,9 +28,9 @@ display: flex;
 flex-direction: row;
 justify-content: center;
 align-items: center;
-min-height: 70vh;
+
 background: var(--bg);
-padding: 0px;
+margin-top: 45px;
 
 
 }
@@ -92,29 +92,32 @@ drop-shadow(0 0 60px var(--clr));
 }
 .home-content{
 
-background: var(--bg);
-font-family: "Protest Guerrilla", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+    background: var(--bg);
+    font-family: "Protest Guerrilla", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 15px;
+    
+    align-items: center;
 
 
 }
 .home-content h1{
   position: relative;
-  display: flexbox;
+ 
   font-size: 70px;
   font-weight: 700;
   color: rgb(118, 161, 199);
-  top: 50px;
-  left: 550px;
-  right: 550px;
+  display: flex;
+justify-content: center;
+align-items: center;
 
 }
 .home-content h1:hover{
   cursor: pointer;
   color: aquamarine;
   }
-.home-content h1::before{
+  .home-content h1::before{
   content: " ";
   position: absolute;
   top: 0;
@@ -138,52 +141,125 @@ font-family: "Protest Guerrilla", sans-serif;
   100%{
   width: 0;
   }
- 
-    
 }
+
+
+
+  
 
 </style>
-
-
-<style>
-  .containers{
-    background: var(--bg);
-    text-decoration: none;
-   color: rgb(118, 161, 199);
-  margin-top: 140px;
-  margin-bottom: 0px;
-  }
-  .containers h1{
-   
-  font-family: "Berkshire Swash", serif;
-  font-weight: 400;
-  font-style: normal;
-  padding-bottom: 20px;
-}
-
  
   
-</style>
 
 
 
-<body>
+
   <div class="home-content">
-        <h1>Contact</h1>
+        <h1 >Contact</h1>
        </div>
-<center >
-        <div class="containers">
-          <h1>Personal Details</h1>
-          <div class="contact-info">
-              <p><span>Name:</span> AGASH</p>
-              <p><span>Email:</span><a class="" href="mailto:agashraj17@gmail.com" > agashraj17@gmail.com</p></a>
-              <p><span>Mobile:</span><a href="https://wa.me/8610712401"> +91 8610712401</p></a>
-          </div>
-      </div>
-    </center>
-  
 
 
+
+
+      <center class="nxt">
+       <div class="container1">
+        <form action="https://api.web3forms.com/submit" method="POST" class="form">
+            <h1>Get in touch</h1>
+            <input type="hidden" name="access_key" value="e4346a82-4852-407a-a583-eefa31cf17c7">
+            <label for="name"></label>
+            <input type="text" id="name" name="name" placeholder="𝒚𝒐𝒖𝒓 𝒏𝒂𝒎𝒆" required>
+            
+            <label for="email"></label>
+            <input type="email" id="email" name="email" placeholder="𝒚𝒐𝒖𝒓 𝒆𝒎𝒂𝒊𝒍" required>
+            
+            <label for="description"></label>
+            <textarea id="description" name="description" placeholder="𝒚𝒐𝒖𝒓 𝒎𝒆𝒔𝒔𝒂𝒈𝒆" rows="4" required></textarea>
+            
+            <input type="submit" value="🆂🆄🅱🅼🅸🆃" >
+            
+        </form>
+        <style>
+
+          .nxt{
+            margin-top: 60px;
+            margin-bottom: 0px;
+            
+
+            
+
+
+          }
+
+          .nxt h1{
+            font-family: "Jacques Francois Shadow", serif;
+  font-weight: 600;
+  font-style: normal;
+  color: aliceblue;
+          }
+          .nxt h1:hover{
+            color:blue;
+          }
+          
+      
+      .container1 {
+        
+          padding: 20px;
+          border-radius: 8px;
+          box-shadow: 0 0 10px rgba(231, 209, 209, 0.856);
+          width: 100%;
+          max-width: 400px;
+          justify-content: center;
+          align-items:center;
+          
+      }
+      
+      .form {
+          display: flex;
+          flex-direction: column;
+
+      }
+      
+      .form h1 {
+          margin-bottom: 20px;
+          font-size: 24px;
+          text-align: center;
+      }
+      
+      .form label {
+          margin-bottom: 5px;
+          font-weight: bold;
+      }
+      
+      .form input[type="text"],
+      .form input[type="email"],
+      .form textarea {
+          padding: 10px;
+          border: 1px solid #9dd6d8;
+          border-radius: 4px;
+          margin-bottom: 15px;
+          width: 100%;
+          box-sizing: border-box;
+      }
+      
+      .form input[type="submit"] {
+          background-color: #28b830;
+          color: white;
+          border: none;
+          padding: 10px;
+          border-radius: 4px;
+          cursor: pointer;
+          font-size: 16px;
+      }
+      
+      .form input[type="submit"]:hover {
+          background-color: #d6ca2a;
+      }
+      </style>
+    </div>
+  </center>
+
+
+    
     <div class="container">
         <ul>
           <li style="--clr: #1877f2">
@@ -213,9 +289,6 @@ font-family: "Protest Guerrilla", sans-serif;
           </li>
         </ul>
         
-      
-
-    
-    
+            
 </body>
 </html>

@@ -11,45 +11,47 @@
 </head>
 <body class="bg-secondary">
 
-    <header >
+    <header>
         <section id="home"></section>
-    <section >
+    <section>
         <nav class="navbar bg-primary fixed-top py-3">
             <div class="container-fluid">
-                <a class="navbar-brand  " href="#"><h3>WELCOME TO MY PORTFOLIO WEBSITE</h3></a>
+                <a class="navbar-brand   " href="#"><h3>WELCOME TO MY PORTFOLIO WEBSITE</h3></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                  <h5 class="offcanvas-title text-secondary" id="offcanvasNavbarLabel">My portfolio</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <div class="offcanvas-header bg-dark">
+                  <h5 class="offcanvas-title  text-info" id="offcanvasNavbarLabel">My portfolio</h5>
+                  <button  type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-                <div class="offcanvas-body">
-                  <ul class="navbar-nav mx-auto">
-                      <li class="nav-item">
-                          <a class="nav-link"  href="#home">Home</a>
+                <div class="offcanvas-body ">
+                  <ul class="navbar-nav">
+                      <li class="nav-item mt-0">
+                          <a class="nav-link "  href="#home">Home</a>
                       </li>
                       <li class="nav-item">
                           <a class="nav-link" href="#about">About Me</a>
                       </li>
+
                       <li class="nav-item">
                         <a class="nav-link" href="#education">Education</a>
                     </li>
                       <li class="nav-item">
                           <a class="nav-link" href="#project">Projects</a>
                       </li>
-                     
+                      
                       
                       <li class="nav-item">
                           <a class="nav-link" href="#skills">Skills</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#resume">Resume</a>
-                    </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="#contact">Contact</a>
+                          <a class="nav-link" href="demo.html">Contact</a>
                       </li>
+
+                   <button  id="openPdfButton" class="glow-on-hover mt-5 me-5 p-2 " type="button"> <li class="nav-item">
+                        <a class="nav-link" href="#resume">Resume</a>
+                    </li></button>
                   </ul>
               </div>
             </div>
@@ -158,6 +160,43 @@
 <div class="display-6 text-center pt-5 pb-0">SKILL</div>
 
 
+<center>
+<section id="projects" class="section" style="background-image: url('background-projects.jpg');">
+        
+ 
+ 
+  <p>
+      <ul class="background-image bg-dark text-white py-3 mx-5 ">
+
+          This project  proposes an AI-based application that uses machine learning algorithms to predict job eligibility based on students' education qualifications and skill sets. 
+          
+
+          The application collects relevant data from students, preprocesses it, and uses advanced machine learning techniques to train a predictive model.
+          
+      </ul>
+  </p>
+
+  <div class="slideshow-container">
+      <div class="slides">
+          <div class="slide"><img src="images/project img 1_files.jfif" alt="Image 1"></div>
+          <div class="slide"><img src="images/project img 2.html" alt="Image 2"></div>
+          <div class="slide"><img src="images/project img 3.html" alt="Image 3"></div>
+      </div>
+      <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+      <button class="next" onclick="changeSlide(1)">&#10095;</button>
+  
+
+ 
+      
+  </div>
+
+</section>
+</center>
+
+
+<div class="display-6 text-center pt-5 pb-0">SKILL</div>
+
+
 <center class="div1 ">
 
   <section id="skills" class="section" style="background-image: url(''); max-width: 75%;">
@@ -170,36 +209,42 @@
                      
                       
                  
-                  <div class="container-fluid" >
+                  <div class="skill-item" >
                       
-                      <p class="list-unstyle">
-                        <h6><span><i class="fa-brands fa-css3-alt"></i></span>CSS</h6>
-                        <h6><span><i class="fa-brands fa-html5"></i></span>HTML</h6>
-                        <h6><span><i class="fa-regular fa-file-word"></i></span>Word</h6>
-                        <h6><span><i class="fa-solid fa-file-excel"></i></span>Excel</h6>
-                        <h6 ><span><i class="fa-brands fa-python"></i></span> Python</h6>
-                        <h6><span><i class="fa-brands fa-js"></i></span>JavaScript</h6>
-                        <h6><span><i class="fa-regular fa-file-powerpoint"></i></span>PowerPoint</h6>
-                          
-                      </p>
+                      <ol style="display: inline-block;">
+                          <li><span><i class="fa-brands fa-python"></i></span> Python</li>
+                          <li><span><i class="fa-brands fa-html5"></i></span>HTML</li>
+                          <li><span><i class="fa-brands fa-css3-alt"></i></span>CSS</li>
+                          <li><span><i class="fa-brands fa-js"></i></span>JavaScript</li>
+                          <li><span><i class="fa-solid fa-file-excel"></i></span>Excel</li>
+                          <li><span><i class="fa-solid fa-file-ppt"></i></i></span>PowerPoint</li>
+                          <li><span><i class="fa-regular fa-file-word"></i></span>Word</li>
+                      </ol>
                   </div>
               </div>
           </div>
       </section>
   </center>
+
+
+ <section id="contact" class="container-fluids align-items align-items-center ">
+    <a href="demo.html"><button class="glow-on-hover mb-3 px-4 p-2 text-dark" type="button">CONTACT</button></a>
+ </section>
+
+
 </main>
 
 
 
 <footer>
     <section id="contact"></section>
-    <footer class="footer ">
-        <div class="footer ">
+    <footer class="footer">
+        <div class="footer-content">
             <p>&copy; 2024 AGASH. All rights reserved.</p>
             <div class="social-icons">
                 <a href="https://www.linkedin.com/in/agash-t-6b160629b/" target="_blank" class="social-icon linkedin"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="mailto:agashraj17@gmail.com" target="_blank" class="social-icon gmail"><i class="fa-solid fa-square-envelope"></i></i></a>
-                <a href="https://github.com/" target="_blank" class="social-icon github"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto:agashraj17@gmail.com" target="_blank" class="social-icon gmail"><i class="fa-solid fa-square-envelope"></i></a>
+                <a href="https://github.com/agashash/portfolio-website.git" target="_blank" class="social-icon github"><i class="fa-brands fa-github"></i></a>
                 <a href="https://www.instagram.com/ahh___ashh" target="_blank" class="social-icon instagram"><i class="fa-brands fa-instagram"></i></a>
                 <a href="https://wa.me/8610712401" target="_blank" class="social-icon whatsapp"><i class="fa-brands fa-whatsapp"></i></i></a>
             </div>

@@ -4,6 +4,7 @@
   margin: 0px;
 }
 
+
 .navbar-brand ,.display-6{
     font-family: "Nerko One", cursive;
     font-weight: 400;
@@ -11,15 +12,22 @@
   }
 
  
-.offcanvas-title  h5{
+.offcanvas-title  h5 {
   font-family: "Josefin Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: weight;
   font-style: normal;
 }
 
+.skill-item li{
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;}
+
+    
+
 .navbar-brand {
-    padding-left: 500px;
+    padding-left:500px;
    
 }
 .navbar-brand:hover{
@@ -27,6 +35,21 @@
     
     cursor: pointer;
 }
+
+.offcanvas-body li{
+
+   font-size:large;
+   font-weight: bold;
+   
+}
+
+.offcanvas-body{
+    background-color: rgb(116, 231, 235);
+}
+
+
+
+
 .education
         {
             background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
@@ -114,8 +137,21 @@
     .div1{
         margin-bottom: 50px;
     }
+    
+     .skill-item ol li::before {
+        content: ""; /* Overrides the default number */
+    }
 
-    /* Social Icons Styles */
+   /* contact button style */
+    
+   
+
+   .container-fluids button{
+    left:615px;
+    bottom: 10px;
+   }
+
+    
 
 /* Footer Styles */
 .footer {
@@ -140,7 +176,7 @@
     font-size: 14px;
 }
 
-/* Social Icons Styles */
+/* Social Icons Styles */   /* Social Icons Styles */
 .social-icons {
     margin-top: 10px;
 }
@@ -193,3 +229,47 @@
     background-color: #ebe7d3;
     color: rgb(180, 32, 32);
 }
+
+
+
+.glow-on-hover {
+    background-color: #cef079e3;
+    border: none;
+    color: #ddc3c3;
+    padding: 15px 30px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+.glow-on-hover::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    
+    transition: opacity 0.3s ease;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 0;
+    opacity: 0;
+}
+
+.glow-on-hover:hover::before {
+    opacity: 1;
+}
+
+.glow-on-hover:hover {
+    background-color: #f8cab8;
+    box-shadow: 0 0 20px rgb(209, 45, 195);
+}
+
+.glow-on-hover {
+    box-shadow: 0 0 10px rgb(9, 245, 9); /* Initial glowing effect */
+}
+
