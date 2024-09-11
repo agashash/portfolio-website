@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
+    <title>CONTACT</title>
+
+</head>
+<style>
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: var(--bg);
+  display: ;
+}
+
+:root {
+--bg: #151F28;
+}
+
+.container {
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+min-height: 70vh;
+background: var(--bg);
+padding: 0px;
+
+
+}
+
+.container ul {
+display: flex;
+position: relative;
+gap: 50px;
+}
+
+.container ul li {
+position: relative;
+list-style: none;
+width: 80px;
+height: 80px;
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+transition: 0.5s;
+}
+.container ul li:before {
+content: "";
+position: absolute;
+inset: 30px;
+box-shadow: 0 0 0 10px var(--clr), 0 0 0 20px var(--bg), 0 0 0 22px var(--clr);
+transition: 0.5s;
+}
+
+.container ul li:hover:before {
+inset: 0;
+}
+
+.container ul li:after {
+content: "";
+position: absolute;
+inset: 0;
+background: var(--bg);
+transform: rotate(45deg);
+}
+.container ul li:hover {
+z-index: 1000;
+transform: scale(0.75);
+}
+
+.container ul li a {
+position: relative;
+text-decoration: none;
+color: var(--clr);
+font-size: 1.5em;
+z-index: 10;
+transition: 0.5s;
+}
+
+.container ul li a:hover {
+font-size: 3em;
+filter: drop-shadow(0 0 20px var(--clr)) drop-shadow(0 0 40px var(--clr))
+drop-shadow(0 0 60px var(--clr));
+}
+.home-content{
+
+background: var(--bg);
+font-family: "Protest Guerrilla", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+
+}
+.home-content h1{
+  position: relative;
+  display: flexbox;
+  font-size: 70px;
+  font-weight: 700;
+  color: rgb(118, 161, 199);
+  top: 50px;
+  left: 550px;
+  right: 550px;
+
+}
+.home-content h1:hover{
+  cursor: pointer;
+  color: aquamarine;
+  }
+.home-content h1::before{
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #081b29;
+  animation: showRight 1s ease forwards;
+  text-shadow: #cddce7;
+  animation-delay: 0.4s;
+
+
+
+
+  
+}
+
+
+
+@keyframes showRight{
+  100%{
+  width: 0;
+  }
+ 
+    
+}
+
+</style>
+
+
+<style>
+  .containers{
+    background: var(--bg);
+    text-decoration: none;
+   color: rgb(118, 161, 199);
+  margin-top: 140px;
+  margin-bottom: 0px;
+  }
+  .containers h1{
+   
+  font-family: "Berkshire Swash", serif;
+  font-weight: 400;
+  font-style: normal;
+  padding-bottom: 20px;
+}
+
+ 
+  
+</style>
+
+
+
+<body>
+  <div class="home-content">
+        <h1>Contact</h1>
+       </div>
+<center >
+        <div class="containers">
+          <h1>Personal Details</h1>
+          <div class="contact-info">
+              <p><span>Name:</span> AGASH</p>
+              <p><span>Email:</span><a class="" href="mailto:agashraj17@gmail.com" > agashraj17@gmail.com</p></a>
+              <p><span>Mobile:</span><a href="https://wa.me/8610712401"> +91 8610712401</p></a>
+          </div>
+      </div>
+    </center>
+  
+
+
+    <div class="container">
+        <ul>
+          <li style="--clr: #1877f2">
+            <a href="mailto:agashraj17@gmail.com">
+                <i class="fa-solid fa-square-envelope"></i>
+            </a>
+          </li>
+          <li style="--clr: #ff0000">
+            <a href="https://www.linkedin.com/in/agash-t-6b160629b/">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </li>
+          <li style="--clr: #1da1f2">
+            <a href="https://github.com/agashash/portfolio-website.git">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </li>
+          <li style="--clr: #c32aa3">
+            <a href="https://www.instagram.com/ahh___ashh">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+          <li style="--clr: #25d366">
+            <a href="https://wa.me/8610712401">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </li>
+        </ul>
+        
+      
+
+    
+    
+</body>
+</html>
