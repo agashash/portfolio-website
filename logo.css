@@ -3,9 +3,14 @@
   padding: 0px;
   margin: 0px;
 }
+ button{
+    position: inherit;
+
+ }
 
 
-.navbar-brand ,.display-6{
+
+.navbar-brand ,.display-6 ,.card-title,.nav-item{
     font-family: "Nerko One", cursive;
     font-weight: 400;
     font-style: normal;
@@ -19,35 +24,63 @@
   font-style: normal;
 }
 
-.skill-item li{
-    font-family: "Nerko One", cursive;
-    font-weight: 400;
-    font-style: normal;}
+.offcanvas-header h5,.container-fluids{
+    font-family: "Jacques Francois Shadow", serif;
+font-weight: 600;
+font-style: normal;
+color: aliceblue;
 
-    
+  }
+ 
+  /*  tittle */
+  
 
-.navbar-brand {
-    padding-left:500px;
-   
-}
-.navbar-brand:hover{
-    color: rgb(218, 111, 39);
-    
-    cursor: pointer;
-}
-
-.offcanvas-body li{
-
-   font-size:large;
-   font-weight: bold;
-   
-}
-
-.offcanvas-body{
-    background-color: rgb(116, 231, 235);
-}
+  
+ 
 
 
+/* 
+subtittle */
+
+
+    .sub-title{
+        margin-top: 7rem;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+       
+       
+        
+        
+      
+        
+    }
+
+    .sub-title p{
+        font-size:x-large;
+        border: 3px solid #664cc7;
+        border-radius: 20%;
+        padding:0 6rem;
+       background-color: rgba(0, 0, 0, 0.5);
+       color: #c68add;
+       box-shadow: 0 0 20px rgb(97, 177, 231);
+      
+      
+
+    }
+
+    .sub-title p:hover{
+        background-color: #dadfc7;
+        color: #0f0f0f;
+
+    }
+
+
+
+
+
+/* 
+.education style */
 
 
 .education
@@ -56,6 +89,7 @@
             border-radius: 10px;
             padding: 20px;
             margin-bottom: 20px;
+            box-shadow: 0 0 20px rgb(97, 177, 231);
         }
  .education img {
             max-width :75%;
@@ -74,27 +108,36 @@
           width: 25px;
 
       }
+
+
+    /*   projects */
+
       .slideshow-container {
         position: relative;
-        max-width: 60%;
+        min-width: 100% 20vw;
         margin: auto;
         overflow: hidden;
+        
     }
     
     .slides {
         display: flex;
-        transition: transform 0.5s ease-in-out;
+        transition: transform 0.6s ease-in-out;
     }
     
     .slide {
-        min-width: 100%;
+        min-width: 100% ;
         box-sizing: border-box;
+       
     }
     
     .slide img {
         width: 100;
         vertical-align: middle;
+        box-shadow: 0 0 20px rgb(209, 45, 195);
     }
+
+    /* button for resume and search */
     
     button {
         position:static;
@@ -116,20 +159,65 @@
     .next {
         right: 10px;
     }
+
+    .glow-on-hover::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 300%;
+        height: 300%;
+        
+        transition: opacity 0.3s ease;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        z-index: 0;
+        opacity: 0;
+    }
+    
+    .glow-on-hover:hover::before {
+        opacity: 1;
+    }
+    
+    .glow-on-hover:hover {
+        background-color: #f8cab8;
+        box-shadow: 0 0 20px rgb(209, 45, 195);
+    }
+    
+    .glow-on-hover {
+        box-shadow: 0 0 10px rgb(9, 245, 9); /* Initial glowing effect */
+    }
+
+   /*  style for .skills-list */
+
     .container p{
         font-family: "Nerko One", cursive;
     font-weight: 400;
     font-style: normal;
     }
 
+    .skill-item li{
+        font-family: "Nerko One", cursive;
+        font-weight: 400;
+        font-style: normal;}
+
     .skills.container{
         margin-bottom: 100px;
     }
 
+    
     .skill-item{
-        background-color:rgba(212, 148, 148, 0.5);
-      
+        background-color:black;
+        box-shadow: 0 0 20px rgb(223, 230, 126);
     }
+    .skills-list li{
+        list-style-type:none;
+    }
+    .skills-list p{
+        background-color: #ebe7d3;
+        color: rgb(180, 32, 32);
+    }
+    
     .container-fluid p{
         background-color: #777254;
         color: rgb(180, 32, 32);
@@ -145,11 +233,6 @@
    /* contact button style */
     
    
-
-   .container-fluids button{
-    left:615px;
-    bottom: 10px;
-   }
 
     
 
@@ -222,13 +305,6 @@
     display: inline-block;
     margin-right: 5px;
 }
-.skill-item{
-    background-color:black;
-}
-.skills-list p{
-    background-color: #ebe7d3;
-    color: rgb(180, 32, 32);
-}
 
 
 
@@ -245,31 +321,357 @@
     transition: background-color 0.3s ease;
 }
 
-.glow-on-hover::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 300%;
-    height: 300%;
+
+
+ 
+@media screen and (max-width:576px){
     
-    transition: opacity 0.3s ease;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-    z-index: 0;
-    opacity: 0;
+        *{
+            padding: 0;
+            margin: 0;
+            font-size: 0.7rem;
+            
+        }
+        button{
+
+            display: inherit;
+        }
+        
+        header{
+            position: relative;
+           
+        }
+
+
+       /*  navbar style
+ */
+
+        
+       
+        .offcanvasNavbarLabel {
+            display: flex;
+            position: absolute;
+       
+       }
+       
+       .navbar{
+        background-color:rgb(7, 50, 194);
+        position: relative;
+        padding: 1.5rem;
+        }
+    
+        .navbar-brand h3{
+            position:absolute;
+            bottom: 1rem;
+            right:0.5rem;
+           padding-right: 10rem;
+           
+        }
+
+        .navbar-toggler:hover{
+            box-shadow: 0 0 20px rgb(1, 12, 17);
+
+        }
+        
+        .offcanvas-body{
+            background-color: #ddc3c3;
+            min-width: 50px 10vw;
+
+        }
+        .nav-item a{
+          
+            font-size: large;
+            
+        }
+
+
+        /* resume */
+
+        #openPdfButton a{
+          padding-left: 10rem
+        }
+    
+    
+
+
+       /* .education style: */ ;
+
+       
+   .education{
+        background-color: rgba(0, 0, 0, 0.5); 
+        border-radius: 20px;
+       }
+
+
+     /*   contact button */
+       
+        #contact{
+        position:relative ;
+       
+      
+       }
+
+       .container-fluids{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
+       }
+       .container-fluids a{
+        text-decoration: none;
+       }
+
+      /* sub tittle about my portfolio */
+       
+      
+      .sub-title{
+    display: flex;
+    margin-top: 7rem;
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px;
+    
 }
 
-.glow-on-hover:hover::before {
-    opacity: 1;
-}
+     .card-body p{
+        font-weight: 100;
+        font-size: small;
+       
 
-.glow-on-hover:hover {
-    background-color: #f8cab8;
-    box-shadow: 0 0 20px rgb(209, 45, 195);
-}
+     }
 
-.glow-on-hover {
-    box-shadow: 0 0 10px rgb(9, 245, 9); /* Initial glowing effect */
-}
+    /*  .social-icon */
+      
+    .social-icons {
+        margin-top: 10px;
+    }
 
+
+
+
+   /*  project slider */
+
+
+   
+
+.slide img {
+    width: 70%;
+    vertical-align: middle;
+    border-radius: 5%;
+    
+   
+}
+.background-image {
+    border: 3px dotted rgb(102, 18, 18);
+    border-radius: 5px;
+
+   }
+
+   
+
+ /*  skills style */
+
+.prev,.next{
+    display:inline-block;
+}
+   .slideshow-container{
+    min-width: 10px 5vh;
+   }
+
+  
+ }
+
+
+ @media screen and (min-width:576px) and (max-width:992px){
+
+    .offcanvasNavbarLabel {
+        display: flex;
+        position: absolute;
+   
+   }
+   
+   .navbar{
+    background-color:rgb(7, 50, 194);
+    position: relative;
+    padding: 1.5rem;
+    }
+
+    .navbar-brand h3{
+        position:absolute;
+        bottom: 1rem;
+        right:5rem;
+       padding-right: 10rem;
+       
+    }
+
+    .navbar-toggler:hover{
+        box-shadow: 0 0 20px rgb(1, 12, 17);
+
+    }
+    
+    .offcanvas-body{
+        background-color: #ddc3c3;
+        min-width: 50px 10vw;
+
+    }
+    .nav-item a{
+      
+        font-size: large;
+        
+    }
+
+  /*   .sub-title */
+     
+    .sub-title{
+        display: flex;
+        margin-top: 8rem;
+        justify-content: center;
+        text-align: center;
+        border-radius: 20px;
+        
+    }
+    
+         .card-body p{
+            font-weight: 100;
+            font-size: xx-large;
+           
+    
+         }
+
+       /*   contact */
+
+       #contact{
+        position:relative ;
+       
+      
+       }
+
+       .container-fluids{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
+       }
+       .container-fluids a{
+        text-decoration: none;
+       }
+
+    
+ }
+
+
+ @media screen and (min-width:992px){
+
+
+    /* heading navbar */
+
+    
+       
+    .offcanvasNavbarLabel {
+        display: flex;
+        position: absolute;
+   
+   }
+   
+   .navbar{
+    background-color:rgb(7, 50, 194);
+    position: relative;
+    padding: 1.5rem;
+    }
+
+    .navbar-brand h3{
+        position:absolute;
+        bottom: 1rem;
+        right:20rem;
+       padding-right: 10rem;
+       
+    }
+
+    .navbar-toggler:hover{
+        box-shadow: 0 0 20px rgb(1, 12, 17);
+
+    }
+    
+    .offcanvas-body{
+        background-color: #ddc3c3;
+        min-width: 50px 10vw;
+
+    }
+    .nav-item a{
+      
+        font-size: large;
+        
+    }
+
+  /*   .sub-title */
+     
+    .sub-title{
+        display: flex;
+        margin-top: 8rem;
+        justify-content: center;
+        text-align: center;
+        border-radius: 20px;
+        
+    }
+    
+         .card-body p{
+            font-weight: 100;
+            font-size: xx-large;
+           
+    
+         }
+
+       /*   contact */
+
+       #contact{
+        position:relative ;
+       
+      
+       }
+
+       .container-fluids{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
+       }
+       .container-fluids a{
+        text-decoration: none;
+       }
+
+      /*  project */
+
+
+       .slide img {
+        width: 60%;
+        vertical-align: middle;
+        border-radius: 5%;
+        
+       
+    }
+    .background-image {
+        border: 3px dotted rgb(102, 18, 18);
+        border-radius: 5px;
+    
+       }
+    
+
+
+
+ }
+       
+
+
+
+
+      
+   
+
+
+    
+
+
+  

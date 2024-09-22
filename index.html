@@ -11,19 +11,21 @@
 </head>
 <body class="bg-secondary">
 
-    <header>
-        <section id="home"></section>
-    <section>
-        <nav class="navbar bg-primary fixed-top py-3">
-            <div class="container-fluid">
-                <a class="navbar-brand   " href="#"><h3>WELCOME TO MY PORTFOLIO WEBSITE</h3></a>
+    <header class="fixed-top">
+        <section id="home">
+   
+        <nav class="navbar  ">
+            <div class="container-fluid ">
+                <div class="navbar-brand " href="#">
+                    <h3>WELCOME TO MY PORTFOLIO WEBSITE</h3>
+                </div>
               <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header bg-dark">
                   <h5 class="offcanvas-title  text-info" id="offcanvasNavbarLabel">My portfolio</h5>
-                  <button  type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  <button  type="button" class="btn-close bg-danger" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body ">
                   <ul class="navbar-nav">
@@ -49,8 +51,8 @@
                           <a class="nav-link" href="demo.html">Contact</a>
                       </li>
 
-                   <button  id="openPdfButton" class="glow-on-hover mt-5 me-5 p-2 " type="button"> <li class="nav-item">
-                        <a class="nav-link" href="#resume">Resume</a>
+                   <button  id="openPdfButton" class="glow-on-hover mt-5 m-5 p-2" type="button"> <li class="nav-item">
+                        <a class="nav-link "href="#resume">Resume</a>
                     </li></button>
                   </ul>
               </div>
@@ -60,18 +62,17 @@
     </header>
 
     <main>
-<center>
-    <section  class="container pt-5 pb-0 py-3 px-5 m-5 mx-5">
+
+    <section  class="sub-title ">
       <div  >
-        <div class="card align-items-center bg-dark text-white">
+     
             <div class="card-body ">
-                <p class="card-title display-6 text-center">About My Self</p>
+                <p class="card-title">About My Self</p>
                 
             </div>
-        </div>
+        
         </section>
         
-</center>
 
 <section id="about">
 <center>
@@ -93,7 +94,7 @@
 </section>
 <center>
   <section class="section mt-2" style="background-image: url(''); max-width: 75%;">
-      <div class="container">
+      <div class="container2">
      
           <div class="education">
               <h3>Degree</h3>
@@ -128,8 +129,8 @@
         
  
  
-  <p>
-      <ul class="background-image bg-dark text-white py-3 mx-5 ">
+  <p class="about-project">
+      <ul class="background-image bg-dark text-white py-3 mx-5 mb-3 ">
 
           This project  proposes an AI-based application that uses machine learning algorithms to predict job eligibility based on students' education qualifications and skill sets. 
           
@@ -139,7 +140,7 @@
       </ul>
   </p>
 
-  <div class="slideshow-container">
+  <div class="slides-container">
       <div class="slides">
           <div class="slide"><img src="images/project img 1_files.jfif" alt="Image 1"></div>
           <div class="slide"><img src="images/project img 2.html" alt="Image 2"></div>
@@ -159,7 +160,7 @@
 
 
 
-
+<div class="skill-main">
 
 <div class="display-6 text-center pt-5 pb-0">SKILL</div>
 
@@ -192,6 +193,7 @@
           </div>
       </section>
   </center>
+  </div>
 
 
  <section id="contact" class="container-fluids align-items align-items-center ">
